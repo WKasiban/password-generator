@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <h1>Password Generator</h1>
+       <form class="form" id="form">
+           <div class="result">
+               <span id="passResult"></span>
+               <button id="copy" type="button">Copy</button>
+           </div>
+           <div class="length">
+               <div class="lengthCondition">
+                    <label for="charLength">Password length</label>
+                    <br/>
+                    <small>(between 8-12 characters)</small>
+                </div>
+                <div class="lengthSelect">
+                    <select id="charLength" name="charLength">
+                       <option value="8">Seclect Password Length</option>
+                       <option value="8">8</option>
+                       <option value="9">9</option>
+                       <option value="10">10</option>
+                       <option value="11">11</option>
+                       <option value="12">12</option>
+                    </select>
+                </div>
+    
+           </div>
+           <div class="options">
+               <div class="checkbox">
+                    <input type="checkbox" id="uppercase" name="uppercase">
+                    <label for="uppercase">Include UpperCase</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="number" name="number">
+                    <label for="number">Include Number</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="symbol" name="symbol">
+                    <label for="symbol">Include Symbol</label>
+                </div>
+                <button id="submit" type="submit" class="submit">Generate Password</button>
+           </div>
+       </form>
+   </div> 
+
+    <script src="main.js"></script>
+</body>
+</html>
